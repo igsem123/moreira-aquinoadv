@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <img id="icon" src="icone.png" alt="Logo do escritório de advocacia sendo a junção da letra A e M">
+
+      <h1 id="titulo">Moreira e Aquino Advocacia</h1>
+      <br>
+      <nav>
+        <ul class="botoes">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="areas.html">Áreas de Atuação</a></li>
+          <li><a href="equipe.html">Nossa Equipe</a></li>
+          <li><a href="contato.html">Entre em Contato</a></li>
+        </ul>
+      </nav>
+      <br>
+    </div>
+  </header>
+  <br>
+  <br>
+  <p>
+  <h2 id="subtitulo">Entre em Contato</h2>
+  </p>
+  <main>
+    <form>
+      <label for="nomesobrenome">Nome e sobrenome </label>
+      <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) X XXXX-XXXX">
+
+      <label for="mensagem">Mensagem</label>
+      <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required
+        placeholder="Digite aqui seu problema de forma resumida para que possamos entrar em contato com você"></textarea>
+
+      <fieldset>
+        </label>
+        <legend class="prefere"> Além do WhatsApp, como prefere que entremos em contato com você?</legend>
+
+        <label><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+
+
+        <label><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+
+
+
+        <label><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend> Qual horário prefere que entremos em contato com você?</legend>
+        <select>
+          <option>Manhã</option>
+          <option>Tarde</option>
+          <option>Noite</option>
+        </select>
+      </fieldset>
+      <label class="checkbox"> <input type="checkbox">Gostaria de ficar informado sobre novidades jurídicos em seu
+        email?</label>
+      <input type="submit" value="Enviar" class="enviar">
+    </form>
+  </main>
+  <br>
+  <p id="namesitebottom">www.moreiraeaquinoadv.com</p>
+</body>
+
+</html>
