@@ -3,19 +3,20 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width">
   <title>Contato</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div class="menu">
-      <img id="icon" src="icone.png" alt="Logo do escritório de advocacia sendo a junção da letra A e M">
+      <img class="icon" src="icone.png" alt="Logo do escritório de advocacia sendo a junção da letra A e M">
 
-      <h1 id="titulo">Moreira e Aquino Advocacia</h1>
+      <h1 class="titulo">Moreira e Aquino Advocacia</h1>
       <br>
       <nav>
         <ul class="botoes">
@@ -31,7 +32,7 @@
   <br>
   <br>
   <p>
-  <h2 id="subtitulo">Entre em Contato</h2>
+  <h2 class="subtitulo">Entre em Contato</h2>
   </p>
   <main>
     <form>
@@ -54,11 +55,7 @@
 
         <label><input type="radio" name="contato" value="email" id="radio-email">Email</label>
 
-
-
         <label><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
-
-
 
         <label><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
 
@@ -75,10 +72,36 @@
       <label class="checkbox"> <input type="checkbox">Gostaria de ficar informado sobre novidades jurídicos em seu
         email?</label>
       <input type="submit" value="Enviar" class="enviar">
+        
+      <br>
+      <table>
+        <thead>
+          <tr>
+            <td>Dias</td>
+            <td>Horários</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>8h - 20h</td>
+          </tr>
+          <tr>
+            <td>Quarta</td>
+            <td>8h - 20h</td>
+          </tr>
+          <tr>
+            <td>Sexta</td>
+            <td>8h - 20h</td>
+          </tr>
+        </tbody>
+      </table>
     </form>
   </main>
   <br>
-  <p id="namesitebottom">www.moreiraeaquinoadv.com</p>
+  <footer>
+    <p>© COPYRIGHT - MOREIRA & AQUINO ADVOGADOS 2023. TODOS OS DIREITOS RESERVADOS.</p>
+  </footer>
 </body>
 
 </html>

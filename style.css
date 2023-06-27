@@ -1,48 +1,126 @@
+@font-face {
+  font-family: "BlackMango";
+  src: url("./fonts/BlackMango-Black.otf") format("opentype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("./fonts/BlackMango-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("./fonts/BlackMango-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("./fonts/BlackMango-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("./fonts/BlackMango-Light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("./fonts/BlackMango-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("./fonts/BlackMango-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("./fonts/BlackMango-SemiBold.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("./fonts/BlackMango-Thin.otf") format("opentype");
+  font-weight: 100;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+main {
+  display: -webkit-flex-box;
+}
+
 .menu {
   background: linear-gradient(#410445, #2D0330);
   display: inline-block;
   width: 100%;
   font-family: 'Prompt', sans-serif;
+  font-weight: 400;
 }
 
-#icon {
-  width: 8%;
+.icon {
+  width: 12%;
   display: inline;
   float: left;
 }
 
-#titulo {
+.titulo {
   text-align: center;
   color: #D49A1A;
-  font-size: 36px;
-  font-family: 'Prompt', sans-serif;
+  font-size: 48px;
+  font-family: 'BlackMango';
+  font-weight: 300;
+  padding-top: 2%;
+  text-transform: uppercase;
 }
 
 .botoes {
   color: white;
   text-align: center;
-  font-size: 15.6px;
+  font-size: 16px;
   font-weight: bold;
-  text-decoration: none;
   text-transform: uppercase;
-  bottom: 0%;
+  padding-top: 10px;
 }
 
 nav li {
   display: inline;
+}
+
+nav {
+  position: relative;
+}
+
+a {
   text-decoration: none;
+  color: white;
+  padding: 5px;
 }
 
 body {
   background: whitesmoke;
   font-family: 'Prompt', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
-#subtitulo {
+.subtitulo {
   text-align: center;
   color: black;
   font-size: 34.4px;
-  font-family: 'Prompt', sans-serif;
+  font-family: 'BlackMango';
+  font-weight: 400;
+  padding-top: 0%;
+  padding-bottom: 10px;
 }
 
 p {
@@ -55,9 +133,12 @@ p {
 footer {
   text-align: center;
   font-size: 13.6px;
-  font-family: 'Prompt', sans-serif;
-  bottom: 0;
-  padding: 40px;
+  font-family: 'BlackMango';
+  font-weight: 600;
+  top: auto;
+  bottom: 100%;
+  padding: 20px;
+  position: relative;
 }
 
 /* definições para a página inicial abaixo*/
@@ -91,14 +172,82 @@ footer {
 }
 
 .areas {
-  background: darkgrey;
+  background: lightgrey;
 }
 
 .resumoareas {
   color: black;
-  text-align: center;
+  text-align: end;
   font-size: 18px;
   font-family: 'Prompt', sans-serif;
+}
+
+.resareas {
+  display: inline-block;
+}
+
+/* definições para a página de equipe abaixo */
+
+.equipe {
+  display: -webkit-inline-box;
+  position: static;
+  margin-right: 70%;
+  margin-left: 0;
+  margin-top: 5%;
+  padding: 0px 15px 0px;
+}
+
+h1.jessica {
+  font-weight: bold;
+}
+
+.jess {
+  display: -webkit-inline-box;
+  width: 70%;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: 400ms;
+  box-shadow: 10px 10px 5px 5px #2D0330;
+}
+
+.jess:hover {
+  opacity: 1;
+}
+
+h1.danilo {
+  font-weight: bold;
+}
+
+.dan {
+  display: inline-block;
+  width: 70%;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: 400ms;
+  box-shadow: 10px 10px 5px 5px #2D0330;
+}
+
+section.lista_equipe {
+  display: -webkit-box;
+  padding-inline-start: 5%;
+}
+
+ul.lista_bordas {
+  padding-inline-end: 10%;
+}
+
+.lista_equipe {
+  width: 100%;
+}
+
+.dan:hover {
+  opacity: 1;
 }
 
 /* definições para a página de contato abaixo */
@@ -151,4 +300,39 @@ form legend,
 .enviar:hover {
   background: darkgrey;
   transform: scale(1.2);
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 10px;
+}
+
+@media screen and (max-width: 480px) {
+
+  main,
+  section,
+  ul,
+  .menu,
+  .mapa,
+  .atuacao,
+  .areas,
+  .equipe,
+  .lista_equipe,
+  .lista_bordas,
+  .subtitulo,
+  .dan,
+  .jess,
+  .form {
+    width: auto;
+  }
 }
